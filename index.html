@@ -89,7 +89,36 @@
       z-index: -1;
     }
 
-    .gallery {
+/*     .gallery {
+      display: flex;
+      overflow-x: auto;
+      white-space: nowrap;
+      padding: 20px;
+      box-sizing: border-box;
+    } */
+
+    .art-piece {
+      flex: 0 0 auto;
+      width: 60vw; /* Adjust the width of each art piece as needed */
+      height: 100vh; /* Adjust the height of each art piece as needed */
+      margin-right: 20px; /* Adjust the margin between art pieces as needed */
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+/*     .art-piece img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    } */
+
+      .gallery-header {
+      font-size: 2em;
+      color: white;
+      margin-top: 20px;
+    }
+
+    .gallery-container {
       display: flex;
       overflow-x: auto;
       white-space: nowrap;
@@ -97,21 +126,21 @@
       box-sizing: border-box;
     }
 
-    .art-piece {
+    .gallery {
       flex: 0 0 auto;
-      width: 70vw; /* Adjust the width of each art piece as needed */
-      height: 50vh; /* Adjust the height of each art piece as needed */
-      margin-right: 20px; /* Adjust the margin between art pieces as needed */
+      width: 50vw; /* Adjust the width of each gallery as needed */
+      /* Adjust the height of each gallery as needed */
+      margin-right: 20px; /* Adjust the margin between galleries as needed */
       border-radius: 15px;
       overflow: hidden;
     }
 
-    .art-piece img {
+    .gallery img {
       width: 100%;
-      height: 100%;
+      height: auto;
       object-fit: cover;
     }
-
+    
     footer {
       position: relative;
       background-color: #7B68EE;
@@ -142,41 +171,79 @@
   <section class="gif-container">
           <div class="about-gif"></div>
   </section>
-  
-    <div class="description">
-    <p>
-      UX / UI
-      <br>
-      GRAPHIC DESIGN
-      <br>
-      DIGITAL MARKETING
-    </p>
-      <br>
-      <hr>
-      <br>
-    <p>
-     Hello! I'm Chloe, a creative and passionate second-year student at the University of Waterloo.
-    </p>
-    <p>
-      I am eager to expand my knowledge in the evolving landscape of UX/UI, graphic design, and digital marketing.
-      My goal is to collaborate with like-minded individuals and organizations that would allow me to contribute my skills and creativity to the industry.
-    </p>
-  </div>
-  
-  
- <div class="gallery">
-    <div class="art-piece">
-      <img src="portrait1.jpg" alt="Portrait">
+
+   <div class="gallery-header">Photography</div>
+  <div class="gallery-container">
+    <div class="gallery">
+      <img src="portrait1.jpg" alt="Photography 1">
     </div>
-    <div class="art-piece">
-      <img src="action.jpg" alt="Action">
+    <div class="gallery">
+      <img src="action.jpg" alt="Photography 2">
     </div>
-    <div class="art-piece">
-      <img src="artwork3.jpg" alt="Artwork 3">
+    <div class="gallery">
+      <img src="photography3.jpg" alt="Photography 3">
     </div>
-    <!-- Add more art pieces as needed -->
+    <!-- Add more photography images as needed -->
   </div>
 
+  <div class="gallery-header">Designs</div>
+  <div class="gallery-container">
+    <div class="gallery">
+      <img src="cover.jpg" alt="Design 1">
+    </div>
+    <div class="gallery">
+      <img src="meettheteam.jpg" alt="Design 2">
+    </div>
+    <div class="gallery">
+      <img src="spread.jpg" alt="Design 3">
+    </div>
+    <div class="gallery">
+      <img src="spread2.jpg" alt="Design 4">
+    </div>
+  </div>
+
+  <div class="gallery-header">Drawings</div>
+  <div class="gallery-container">
+    <div class="gallery">
+      <img src="colourism_artwork.jpg" alt="Drawing 1">
+    </div>
+    <div class="gallery">
+      <img src="ghibli.jpg" alt="Drawing 2">
+    </div>
+    <div class="gallery">
+      <img src="drawing3.jpg" alt="Drawing 3">
+    </div>
+    <!-- Add more drawing images as needed -->
+  </div>
+
+  <div class="gallery-header">Videos</div>
+  <div class="gallery-container">
+    <div class="gallery">
+      <img src="video1.jpg" alt="Video 1">
+    </div>
+    <div class="gallery">
+      <img src="video2.jpg" alt="Video 2">
+    </div>
+    <div class="gallery">
+      <img src="video3.jpg" alt="Video 3">
+    </div>
+    <!-- Add more video images as needed -->
+  </div>
+
+  <div class="gallery-header">Social Media</div>
+  <div class="gallery-container">
+    <div class="gallery">
+      <img src="spc.JPEG" alt="Social Media 1">
+    </div>
+    <div class="gallery">
+      <img src="twinday.JPEG" alt="Social Media 2">
+    </div>
+    <div class="gallery">
+      <img src="jerseyday.JPEG" alt="Social Media 3">
+    </div>
+    <!-- Add more social media images as needed -->
+  </div>
+  
   <footer>
     <p>&copy; 2023 My One-Page Website</p>
   </footer>
