@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One-Page Website</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      top: 50%;
+    }
+
+    body {
+      text-align: center;
+      font-family: 'Verdana', sans-serif;
+      line-height: 0.8;
+    }
+
+    header {
+/*       background-color: #6A5ACD; */
+      color: white;
+      font-size: 5em;
+      padding: 15px;
+      text-align: left;
+      position: absolute;
+      top: 22%;
+      left: 22%;
+      transform: translate(-50%, -50%);
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      text-align: center;
+      padding: 10px;
+      margin: 0 10px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+     color: #9A88EE;
+    }
+
+    section {
+      padding: 20px;
+      text-align: center;
+    	color: white;
+    }
+
+      .about-container {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+    
+ 		.about-image {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url(ghibli.jpg) center/cover no-repeat;
+     	filter: brightness(95%) sepia(10%) saturate(110%) hue-rotate(-10deg);
+      z-index: -1; /* Send the image to the background */
+    }
+
+    .gif-container {
+    	position: relative;
+    	overflow: hidden;
+      width: 50%; /* Adjust the width as needed */
+      margin: 0 auto; /* Center the container */
+}
+    .about-gif {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50%;
+      background: url(animated.png) center/cover no-repeat;
+     	filter: brightness(140%) contrast(120%);
+      z-index: -1;
+    }
+    .description {
+      position: absolute;
+    	top: 50;
+      left: 50; /* Adjust the distance from the left side */
+      width: 80%;
+      transform: translate(0%, 300%);
+      background: rgba(0, 0, 0, 0.3);
+      padding: 20px;
+      box-sizing: border-box;
+      border-radius: 15px;
+      opacity: 0;
+      transition: opacity 0.5s;
+    }
+
+    .description p {
+      font-size: 1.2em;
+      color: white;
+      line-height: 1.15;
+      text-align: left;
+    }
+    
+      .show-description {
+      opacity: 1;
+    }
+
+    
+    footer {
+      position: relative;
+      background-color: #7B68EE;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Chloe 
+      <br>
+      Lee</h1>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#mywork">My Work</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  
+  <section class="about-container">
+      <div class="about-image"></div>
+  </section>
+  
+  <section class="gif-container">
+          <div class="about-gif"></div>
+  </section>
+  
+    <div class="description">
+    <p>
+      UX / UI
+      <br>
+      GRAPHIC DESIGN
+      <br>
+      DIGITAL MARKETING
+    </p>
+      <br>
+      <hr>
+      <br>
+    <p>
+     Hello! I'm Chloe, a creative and passionate second-year student at the University of Waterloo.
+    </p>
+    <p>
+      I am eager to expand my knowledge in the evolving landscape of UX/UI, graphic design, and digital marketing.
+      My goal is to collaborate with like-minded individuals and organizations that would allow me to contribute my skills and creativity to the industry.
+    </p>
+  </div>
+  
+   <script>
+    let lastScrollTop = 0;
+
+    window.addEventListener("scroll", () => {
+      const description = document.querySelector(".description");
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+      if (scrollTop > lastScrollTop) {
+        // Scrolling down
+        description.classList.remove("show-description");
+      } else {
+        // Scrolling up
+        description.classList.add("show-description");
+      }
+
+      lastScrollTop = scrollTop;
+    });
+  </script>
+  
+  <footer>
+    <p>&copy; 2023 My One-Page Website</p>
+  </footer>
+</body>
+</html>
