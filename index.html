@@ -55,7 +55,7 @@
     	color: white;
     }
 
-      .about-container {
+    .about-container {
       position: relative;
       height: 100vh;
       overflow: hidden;
@@ -89,13 +89,6 @@
       z-index: -1;
     }
 
-/*     .gallery {
-      display: flex;
-      overflow-x: auto;
-      white-space: nowrap;
-      padding: 20px;
-      box-sizing: border-box;
-    } */
 
     .art-piece {
       flex: 0 0 auto;
@@ -106,13 +99,7 @@
       overflow: hidden;
     }
 
-/*     .art-piece img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    } */
-
-      .gallery-header {
+    .gallery-header {
       font-size: 2em;
       color: black;
       margin-top: 20px;
@@ -132,7 +119,7 @@
       flex: 0 0 auto;
       margin-right: 50px; /* Adjust the margin between galleries as needed */
       overflow: hidden;
-
+			position: relative;
     }
 
     .gallery img {
@@ -142,27 +129,51 @@
       object-fit: cover;
     }
     
+    .description-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+      line-height: 1.5;
+      text-align: center;
+}
+
+.gallery:hover .description-overlay {
+  opacity: 1;
+}
+
+/* Style the link around video images */
+.gallery a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.gallery a:hover {
+  color: inherit;
+}
+    
+    
     .description {
-/*       position: relative;
+      position: absolute;
+      top: 120%;
+      left: 0;
       width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.5);
+      height: auto;
+      background: rgba(255, 255, 255, 0.8);
       box-sizing: border-box;
       transition: opacity 0.5s, background 0.5s;
       text-align: left;
-      padding: 100px; */
-      
-        position: absolute;
-  top: 120%;
-  left: 0;
-  width: 100%;
-  height: auto;
-  background: rgba(255, 255, 255, 0.8);
-  box-sizing: border-box;
-  transition: opacity 0.5s, background 0.5s;
-  text-align: left;
-  padding: 100px;
-  z-index: -1; 
+      padding: 100px;
+      z-index: -1; 
     }
     
     footer {
@@ -201,47 +212,117 @@
   <div class="gallery-container">
     <div class="gallery">
       <img src="mels.jpg" alt="Photography 1">
+      <div class="description-overlay">
+   			 <p>"Comfort Food"
+           <br>
+           Landscape shot, 2023</p>
+  </div>
     </div>
     <div class="gallery">
       <img src="action.jpg" alt="Photography 2">
+        <div class="description-overlay">
+  <p>"RUN!"
+    <br>
+    Action shot, 2023</p>
+  </div>
     </div>
     <div class="gallery">
       <img src="lama.jpeg" alt="Photography 3">
+        <div class="description-overlay">
+    <p>"Feeding"
+      <br>
+      Wildlife shot, 2023</p>
+  </div>
     </div>
     <div class="gallery">
       <img src="flowerclose.jpeg" alt="Photography 4">
+        <div class="description-overlay">
+    <p>"Under the Petals"
+      <br>
+      Macro shot, 2023</p>
+  </div>
     </div>
     <div class="gallery">
       <img src="portrait1.jpg" alt="Photography 5">
+              <div class="description-overlay">
+    <p>"Focus on Me"
+      <br>
+      Portrait, 2023</p>
+  </div>
     </div>
     <div class="gallery">
       <img src="dogportrait.jpeg" alt="Photography 6">
+    <div class="description-overlay">
+    <p>"A Man's Best Friend"
+      <br>
+      Wildlife shot, 2023</p>
+  </div>
     </div>
   </div>
 
   <div class="gallery-header">Videos</div>
   <div class="gallery-container">
+   
     <div class="gallery">
+      <a href="https://www.youtube.com/watch?v=w2RGNoVXJLc" target="_blank">
       <img src="IMG_9898.jpg" alt="Video 1">
+      <div class="description-overlay">
+    		<p>"Kelly's Canvas: Where art meets the skin"
+      		<br>
+      		Mini documentary, 2023</p>
+        </div>
+      </a>
     </div>
+    
     <div class="gallery">
+      <a href="https://www.youtube.com/watch?v=Q8GXtj-IULY" target="_blank">
       <img src="IMG_9899.jpg" alt="Video 2">
+      <div class="description-overlay">
+    		<p>"Crayons"
+      		<br>
+      		Silent film, 2023</p>
+        </div>
+      </a>
     </div>
+  
     <div class="gallery">
+      <a href="https://www.youtube.com/watch?v=SXGi9adLj6Y" target="_blank">
       <img src="IMG_9900.jpg" alt="Video 3">
-    </div>
+        <div class="description-overlay">
+    		<p>"Surveillance Capitalism"
+      		<br>
+      		Video essay, 2023</p>
+        </div>
+      </a>
   </div>
+  </div>
+
 
   <div class="gallery-header">Social Media</div>
   <div class="gallery-container">
     <div class="gallery">
       <img src="spc.JPEG" alt="Social Media 1">
+        <div class="description-overlay">
+  			<p>"SPC" graphic for Instagram
+    		<br>
+    		Photoshop, 2021</p>
+  </div>
     </div>
     <div class="gallery">
       <img src="twinday.JPEG" alt="Social Media 2">
+        <div class="description-overlay">
+  			<p>"Twin Day" graphic for Instagram
+    		<br>
+    		Photoshop, 2021</p>
+  </div>
     </div>
     <div class="gallery">
       <img src="jerseyday.JPEG" alt="Social Media 3">
+        <div class="description-overlay">
+  			<p>"Jersey Day" graphic for Instagram
+    		<br>
+    		Photoshop, 2021</p>
+  </div>
     </div>
   </div>
   
@@ -249,15 +330,43 @@
   <div class="gallery-container">
     <div class="gallery">
       <img src="cover.jpg" alt="Design 1">
+        <div class="description-overlay">
+  			<p>Creator's Collective - Fall 2023 edition "Adrift"
+    		<br>
+        Magazine Front & Back cover  
+        <br>
+    		Adobe Illustrator & InDesign, 2023</p>
+  </div>
     </div>
     <div class="gallery">
       <img src="meettheteam.jpg" alt="Design 2">
+      <div class="description-overlay">
+  			<p>Creator's Collective - Fall 2023 edition "Adrift"
+    		<br>
+        Meet the Team Layout  
+        <br>
+    		Adobe Illustrator & InDesign, 2023</p>
+  </div>
     </div>
     <div class="gallery">
       <img src="spread.jpg" alt="Design 3">
+      <div class="description-overlay">
+  			<p>Creator's Collective - Fall 2023 edition "Adrift"
+    		<br>
+        Student Art feature layout  
+        <br>
+    		Adobe Illustrator & InDesign, 2023</p>
+  </div>
     </div>
     <div class="gallery">
       <img src="spread2.jpg" alt="Design 4">
+      <div class="description-overlay">
+  			<p>Creator's Collective - Fall 2023 edition "Adrift"
+    		<br>
+        Student Art feature layout  
+        <br>
+    		Adobe Illustrator & InDesign, 2023</p>
+  </div>
     </div>
   </div>
 
@@ -265,9 +374,24 @@
   <div class="gallery-container">
     <div class="gallery">
       <img src="colourism_artwork.jpg" alt="Drawing 1">
+        <div class="description-overlay">
+    		<p>"Shades of Self: 
+          <br>
+          Navigating Colourism in Asia"
+      		<br>
+      		Digital painting
+          <br>Procreate, 2022</p>
+        </div>
     </div>
     <div class="gallery">
       <img src="ghibli.jpg" alt="Drawing 2">
+            <div class="description-overlay">
+    		<p>"Escape with me" <br>
+          Inspired by "Spirited Away"
+      		<br>
+      		Digital Painting
+          <br>Procreate, 2022</p>
+        </div>
     </div>
    </div>
   </div>
