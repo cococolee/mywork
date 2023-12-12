@@ -20,12 +20,11 @@
     body {
       text-align: center;
       font-family: 'Verdana', sans-serif;
-       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
       line-height: 0.8;
     }
 
     header {
-/*       background-color: #6A5ACD; */
       color: white;
       font-size: 5em;
       padding: 15px;
@@ -95,7 +94,6 @@
       z-index: -1;
     }
 
-
     .art-piece {
       flex: 0 0 auto;
       width: 60vw; /* Adjust the width of each art piece as needed */
@@ -111,11 +109,15 @@
       margin-top: 20px;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0);
       font-family: Chango;
-      
-/*       Abril+Fatface&family=Agbalumo&family=Caprasimo&family=Chango&family=Montserrat+Subrayada:wght@700&family=Montserrat:wght@700&display=swap" rel="stylesheet"> 
-  <style> */
-    }
 
+    }
+/*   Code copied from: https://www.w3schools.com/css/css_image_gallery.asp
+Author: w3schools.com
+Name: CSS Image Gallery
+Description: CSS can be used to create an image gallery.
+Date retrieved: Dec. 9, 2023
+
+ Copied code starts  */
     .gallery-container {
       display: flex;
       overflow-x: auto;
@@ -137,7 +139,16 @@
       width: auto;
       object-fit: cover;
     }
+/*     Copied code ends */
     
+    
+    /*   Code copied from: https://www.w3schools.com/howto/howto_css_overlay.asp
+Author: w3schools.com
+Name: How TO - Overlay
+Description: Learn how to create an overlay effect with CSS.
+Date retrieved: Dec. 9, 2023
+
+ Copied code starts  */
     .description-overlay {
       position: absolute;
       top: 0;
@@ -155,24 +166,13 @@
       line-height: 1.5;
       text-align: center;
       font-family: 'Verdana', sans-serif;
-
-
 }
 
-.gallery:hover .description-overlay {
-  opacity: 1;
+    .gallery:hover .description-overlay {
+      opacity: 1;
 }
 
-/* Style the link around video images */
-.gallery a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.gallery a:hover {
-  color: inherit;
-}
-    
+/*     Copied code ends */
     
     .description {
       position: absolute;
@@ -218,6 +218,15 @@
   <section class="gif-container">
           <div class="about-gif"></div>
   </section>
+  
+    <!--
+Code copied from: https://www.w3schools.com/howto/howto_css_image_gallery.asp
+Author: w3schools.com
+Name: How TO - Responsive Image Gallery
+Description: Learn how to create a responsive image gallery with CSS.
+Date retrieved: Dec. 9, 2023
+-->
+<!-- Copied code starts -->
   
 <div class="description"> 
    <div class="gallery-header">Photography</div>
@@ -271,6 +280,15 @@
   </div>
     </div>
   </div>
+  
+      <!--
+Code copied from: https: https://www.w3schools.com/html/html_images.asp
+Author: w3schools.com
+Name: HTML Images
+Description: Images can improve the design and the appearance of a web page
+Date retrieved: Dec. 9, 2023
+-->
+<!-- Copied code starts -->
 
   <div class="gallery-header">Videos</div>
   <div class="gallery-container">
@@ -308,8 +326,8 @@
       </a>
   </div>
   </div>
-
-
+<!-- Copied code ends -->
+  
   <div class="gallery-header">Social Media</div>
   <div class="gallery-container">
     <div class="gallery">
@@ -408,11 +426,7 @@
    </div>
   </div>
   
- 
-<!--   
-  <footer>
-    <p>&copy; 2023 My One-Page Website</p>
-  </footer> -->
+<!--   Copied code ends-->
    
 </body>
 </html>
