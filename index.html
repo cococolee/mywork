@@ -24,14 +24,14 @@
 
     body {
       text-align: center;
-      font-family: 'Verdana', sans-serif;  
       line-height: 0.8;
+      font-family: "Montserrat";
     }
 
     header {
       color: white;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-      
+      font-family: 'Verdana', sans-serif;  
       font-size: 5em;
       padding: 15px;
       text-align: left;
@@ -43,7 +43,7 @@
 
     nav {
       display: flex;
-      justify-content: center;
+      justify-content: right;
       padding: 10px;
     }
 
@@ -58,7 +58,8 @@
     }
 
     nav a:hover {
-     color: #9A88EE;
+       color: white;
+      text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
     }
 
     section {
@@ -116,12 +117,22 @@
       color: #728FCE;
       margin-top: 20px;
 /*       font-family: 'Verdana', sans-serif; */
-      font-family: "Verdana";
-      text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 /*       text-stroke: bold;
       text-style: bold; */
-      font-weight: 900;
+/*       font-weight: 900; */
+              font-family: "Montserrat";
+/*         text-shadow: 2px 2px 4px rgba(205, 100, 160, 0.5);  */
     }
+    
+    .gallery h4 {
+      font-family: "Montserrat";
+      font-size: 15px;
+      line-height: 1.5;
+      
+  
+    }
+    
 /*   Code copied from: https://www.w3schools.com/css/css_image_gallery.asp
 Author: w3schools.com
 Name: CSS Image Gallery
@@ -191,7 +202,7 @@ Date retrieved: Dec. 9, 2023
       left: 0;
       width: 100%;
       height: auto;
-      background: rgba(255, 255, 255, 0.9);
+      background: rgba(255, 255, 255);
       box-sizing: border-box;
       transition: opacity 0.5s, background 0.5s;
       text-align: left;
@@ -203,9 +214,9 @@ Date retrieved: Dec. 9, 2023
       text-align: right;
       padding: 20px;
       margin: 20px;
-      font-size: 2em;
+      font-size: 1.5em;
     }
-    
+     
     footer {
        position: relative;
   
@@ -233,7 +244,8 @@ Date retrieved: Dec. 9, 2023
 <!--     <a href="#https://netnet.studio/?gh=cococolee/chloelee/main">Home</a> -->
     <a href="https://cococolee.github.io/chloelee/#about">Home</a>
     <a href="#mywork">My Work</a>
-      <a href="https://docs.google.com/document/d/1Yjn0Qj1xV_dQhlkf0yps-Es0Bfg3Eqj8VI-Ygya2QAU/edit?usp=sharing" target="_blank">Resume</a>
+          <a href="https://drive.google.com/file/d/1n7HJacLfEGdCsBsEXe_IwDumqxjZA-jS/view?usp=share_link" target="_blank">Resume</a>
+<!--       <a href="https://docs.google.com/document/d/1Yjn0Qj1xV_dQhlkf0yps-Es0Bfg3Eqj8VI-Ygya2QAU/edit?usp=sharing" target="_blank">Resume</a> -->
 <!--     <a href="https://cococolee.github.io/contactme/">Contact</a> -->
   </nav>
   
@@ -245,17 +257,76 @@ Date retrieved: Dec. 9, 2023
           <div class="about-gif"></div>
   </section>
   
-    <!--
-Code copied from: https://www.w3schools.com/howto/howto_css_image_gallery.asp
-Author: w3schools.com
-Name: How TO - Responsive Image Gallery
-Description: Learn how to create a responsive image gallery with CSS.
-Date retrieved: Dec. 9, 2023
--->
-<!-- Copied code starts -->
-  
-<!--   Photography gallery -->
+
+
 <div class="description"> 
+
+  <!--   Designs Gallery -->
+    <div class="gallery-header">EDITORIAL DESIGNS</div>
+  <br> 
+  <br>
+      <div class="gallery h4">     
+        <h4>The Creators Collective Edition is an art magazine that publishes 350 copies every semester, featuring artwork by UWaterloo students. As an editorial designer, my role involved designing layouts in accordance with the branding guidelines developed by myself and my team, utilizing software such as InDesign and Illustrator.
+          <br> 
+      
+          The fall 2023 Edition's theme, "Adrift," encouraged students to break free from rules and guidelines. It urged them to release themselves from limitations and explore beyond their comfort zones. While it may be daunting to let go of safety lines and boundaries, it is often necessary for personal growth. By giving oneself the chance to break free and explore, boundaries can be tested and opportunities seized. 
+
+
+
+
+          </h4>
+  </div>
+  
+  <div class="gallery-container">
+    <div class="gallery">
+      <img src="cover.jpg" alt="Design 1">
+        <div class="description-overlay">
+  			<p>Creator's Collective - Fall 2023 edition "Adrift"<br>Magazine Front & Back cover<br>Adobe Illustrator & InDesign, 2023</p>
+  </div>
+    </div>
+    <div class="gallery">
+      <img src="meettheteam.jpg" alt="Design 2">
+      <div class="description-overlay">
+  			<p>Creator's Collective - Fall 2023 edition "Adrift"<br>Meet the Team Layout<br>Adobe Illustrator & InDesign, 2023</p>
+  </div>
+    </div>
+    <div class="gallery">
+      <img src="spread.jpg" alt="Design 3">
+      <div class="description-overlay">
+  			<p>Creator's Collective - Fall 2023 edition "Adrift"<br>Student Art feature layout<br>Adobe Illustrator & InDesign, 2023</p>
+  </div>
+    </div>
+    <div class="gallery">
+      <img src="spread2.jpg" alt="Design 4">
+      <div class="description-overlay">
+  			<p>Creator's Collective - Fall 2023 edition "Adrift"<br>Student Art feature layout<br>Adobe Illustrator & InDesign, 2023</p>
+  </div>
+    </div>
+  </div>
+  
+  <!--   Social media graphics gallery -->
+  <div class="gallery-header">GRAPHIC DESIGNS</div>
+  <div class="gallery-container">
+    <div class="gallery">
+      <img src="spc.JPEG" alt="Social Media 1">
+        <div class="description-overlay">
+  			<p>"SPC" graphic for Instagram<br>Photoshop, 2021</p>
+  </div>
+    </div>
+    <div class="gallery">
+      <img src="twinday.JPEG" alt="Social Media 2">
+        <div class="description-overlay">
+  			<p>"Twin Day" graphic for Instagram<br>Photoshop, 2021</p>
+  </div>
+    </div>
+    <div class="gallery">
+      <img src="jerseyday.JPEG" alt="Social Media 3">
+        <div class="description-overlay">
+  			<p>"Jersey Day" graphic for Instagram<br>Photoshop, 2021</p>
+  </div>
+    </div>
+  </div>
+  
    <div class="gallery-header">PHOTOGRAPHY</div>
   <div class="gallery-container">
     
@@ -282,13 +353,13 @@ Date retrieved: Dec. 9, 2023
   		</div>
     </div>
     
-            <div class="gallery">  
+<!--             <div class="gallery">  
       <img src="Tezza-5100.jpg" alt="Photography 1">
       <div class="description-overlay">
    			 <p>"Vietnamese Lion Dancers" <br> Action shot, 2024</p>
   		</div>
     </div>
-    
+     -->
             <div class="gallery">  
       <img src="Tezza-5539.jpg" alt="Photography 1">
       <div class="description-overlay">
@@ -373,57 +444,9 @@ Date retrieved: Dec. 9, 2023
   </div>
 <!-- Copied code ends -->
   
-<!--   Social media graphics gallery -->
-  <div class="gallery-header">GRAPHIC DESIGNS</div>
-  <div class="gallery-container">
-    <div class="gallery">
-      <img src="spc.JPEG" alt="Social Media 1">
-        <div class="description-overlay">
-  			<p>"SPC" graphic for Instagram<br>Photoshop, 2021</p>
-  </div>
-    </div>
-    <div class="gallery">
-      <img src="twinday.JPEG" alt="Social Media 2">
-        <div class="description-overlay">
-  			<p>"Twin Day" graphic for Instagram<br>Photoshop, 2021</p>
-  </div>
-    </div>
-    <div class="gallery">
-      <img src="jerseyday.JPEG" alt="Social Media 3">
-        <div class="description-overlay">
-  			<p>"Jersey Day" graphic for Instagram<br>Photoshop, 2021</p>
-  </div>
-    </div>
-  </div>
+
   
-<!--   Designs Gallery -->
-    <div class="gallery-header">EDITORIAL DESIGNS</div>
-  <div class="gallery-container">
-    <div class="gallery">
-      <img src="cover.jpg" alt="Design 1">
-        <div class="description-overlay">
-  			<p>Creator's Collective - Fall 2023 edition "Adrift"<br>Magazine Front & Back cover<br>Adobe Illustrator & InDesign, 2023</p>
-  </div>
-    </div>
-    <div class="gallery">
-      <img src="meettheteam.jpg" alt="Design 2">
-      <div class="description-overlay">
-  			<p>Creator's Collective - Fall 2023 edition "Adrift"<br>Meet the Team Layout<br>Adobe Illustrator & InDesign, 2023</p>
-  </div>
-    </div>
-    <div class="gallery">
-      <img src="spread.jpg" alt="Design 3">
-      <div class="description-overlay">
-  			<p>Creator's Collective - Fall 2023 edition "Adrift"<br>Student Art feature layout<br>Adobe Illustrator & InDesign, 2023</p>
-  </div>
-    </div>
-    <div class="gallery">
-      <img src="spread2.jpg" alt="Design 4">
-      <div class="description-overlay">
-  			<p>Creator's Collective - Fall 2023 edition "Adrift"<br>Student Art feature layout<br>Adobe Illustrator & InDesign, 2023</p>
-  </div>
-    </div>
-  </div>
+
 
 <!--   Drawings gallery -->
   <div class="gallery-header">ART</div>
